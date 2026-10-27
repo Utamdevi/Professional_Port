@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Utamdevi's web developer portfolio featuring responsive websites and web applications.">
+  <title>Utamdevi | Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Utamdevi home">UD<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false"
+      aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="themeToggle"
+        type="button" aria-label="Switch to dark mode"
+        title="Toggle dark mode">🌙</button>
+      <a class="button button-small" href="#contact">Let's talk ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          WEB DEVELOPER · PORTFOLIO
+        </p>
+
+        <h1>
+          I build digital experiences that
+          <span class="gradient-text">make an impact.</span>
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm <strong>Utamdevi</strong>. I create clean, responsive
+          websites and useful web applications that look great on every screen.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#projects">Explore my work ↘</a>
+          <a class="button button-outline" href="#contact">Contact me</a>
+        </div>
+
+        <div class="quick-stats">
+          <div>
+            <strong>HTML/CSS</strong>
+            <span>Responsive layouts</span>
+          </div>
+          <div>
+            <strong>JavaScript</strong>
+            <span>Interactive experiences</span>
+          </div>
+          <div>
+            <strong>React</strong>
+            <span>Modern interfaces</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Decorative code illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="code-window">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <small>portfolio.js</small>
+          </div>
+
+          <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Utamdevi"</span>,
+  skills: [
+    <span class="code-green">"HTML"</span>,
+    <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>,
+    <span class="code-green">"React"</span>
+  ],
+  loves: <span class="code-green">"building for the web"</span>,
+  available: <span class="code-orange">true</span>
+};</code></pre>
+
+          <div class="code-footer">
+            <span class="status-dot"></span>
+            Ready to build something great
+          </div>
+        </div>
+
+        <div class="float-badge badge-html">HTML5</div>
+        <div class="float-badge badge-css">CSS3</div>
+        <div class="float-badge badge-js">JS</div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Developer with a <span class="gradient-text">curious mind.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="profile-card">
+          <div class="profile-avatar">UD</div>
+          <p class="profile-name">Utamdevi</p>
+          <p class="muted">Web Developer</p>
+          <div class="profile-line"></div>
+          <p class="profile-note">
+            Turning ideas into practical, user-friendly digital experiences.
+          </p>
+        </div>
+
+        <div class="about-copy">
+          <h3>Thoughtful design. Useful code. Better experiences.</h3>
+
+          <p>
+            I'm a web developer who enjoys turning ideas into accessible,
+            easy-to-use websites. I focus on clear layouts, responsive design,
+            and interactive details that help people get things done.
+          </p>
+
+          <p>
+            I'm always learning new tools and improving my skills through
+            hands-on projects. My goal is to build websites that work smoothly
+            on phones, tablets, and desktop computers.
+          </p>
+
+          <h4>My toolkit</h4>
+          <div class="skill-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Responsive Design</span>
+            <span>Git &amp; GitHub</span>
+          </div>
+
+          <a class="text-link" href="#contact">
+            Have a project in mind? Let's connect <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I CAN DO FOR YOU</p>
+        <h2>My Web Development <span class="gradient-text">Services.</span></h2>
+        <p class="section-description">
+          I help individuals, startups, and businesses build modern websites
+          that look professional, work smoothly, and provide a great user
+          experience on every device.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">🌐</div>
+          <span class="service-number">01</span>
+          <h3>Website Development</h3>
+          <p>
+            I create modern, attractive, and user-friendly websites tailored
+            to your goals. Whether you need a personal portfolio, business
+            website, landing page, or startup website, I focus on clean design,
+            organized content, and reliable functionality.
+          </p>
+          <ul class="service-features">
+            <li>Personal portfolio websites</li>
+            <li>Business and company websites</li>
+            <li>Landing pages and promotional websites</li>
+            <li>Clean HTML, CSS, and JavaScript code</li>
+          </ul>
+          <div class="service-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <a href="#contact" class="text-link">Discuss your website ↗</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">💻</div>
+          <span class="service-number">02</span>
+          <h3>Frontend Development</h3>
+          <p>
+            I turn designs and ideas into interactive web pages using modern
+            frontend techniques. I build clear layouts, reusable interface
+            components, attractive buttons, navigation menus, and interactive
+            features that make websites easier to use.
+          </p>
+          <ul class="service-features">
+            <li>Interactive user interfaces</li>
+            <li>React-based components and pages</li>
+            <li>Forms, menus, modals, and interactive elements</li>
+            <li>Accessible and organized page structure</li>
+          </ul>
+          <div class="service-tags">
+            <span>JavaScript</span><span>React</span><span>UI Design</span>
+          </div>
+          <a href="#contact" class="text-link">Build your interface ↗</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">📱</div>
+          <span class="service-number">03</span>
+          <h3>Responsive Web Design</h3>
+          <p>
+            Your website should look good on every screen. I design flexible
+            layouts for mobile phones, tablets, laptops, and desktop monitors.
+            I focus on readable text, comfortable spacing, touch-friendly
+            controls, and easy navigation.
+          </p>
+          <ul class="service-features">
+            <li>Mobile-first website layouts</li>
+            <li>Flexible grids and responsive images</li>
+            <li>Navigation menus for smaller screens</li>
+            <li>Testing across different screen sizes</li>
+          </ul>
+          <div class="service-tags">
+            <span>Media Queries</span><span>Flexbox</span><span>CSS Grid</span>
+          </div>
+          <a href="#contact" class="text-link">Make your site responsive ↗</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🎨</div>
+          <span class="service-number">04</span>
+          <h3>Website Redesign</h3>
+          <p>
+            I can refresh an existing website with a cleaner appearance,
+            improved content structure, consistent colours, and better
+            navigation. The goal is to make your website feel modern and
+            help visitors find important information easily.
+          </p>
+          <ul class="service-features">
+            <li>Modern visual styling and layouts</li>
+            <li>Improved page structure and readability</li>
+            <li>Consistent colours, fonts, and spacing</li>
+            <li>Responsive updates for mobile and desktop</li>
+          </ul>
+          <div class="service-tags">
+            <span>CSS</span><span>UI Improvement</span><span>Responsive Design</span>
+          </div>
+          <a href="#contact" class="text-link">Refresh your website ↗</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⚡</div>
+          <span class="service-number">05</span>
+          <h3>Website Maintenance</h3>
+          <p>
+            I help maintain frontend websites by fixing layout issues,
+            updating content and styles, and checking that common interactions
+            work as expected. I focus on keeping the website organized,
+            usable, and consistent across devices.
+          </p>
+          <ul class="service-features">
+            <li>Frontend bug fixes and layout corrections</li>
+            <li>Content and styling updates</li>
+            <li>Navigation and form interaction checks</li>
+            <li>Basic usability and responsive checks</li>
+          </ul>
+          <div class="service-tags">
+            <span>Debugging</span><span>HTML/CSS</span><span>JavaScript</span>
+          </div>
+          <a href="#contact" class="text-link">Improve your website ↗</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✨</div>
+          <span class="service-number">06</span>
+          <h3>Website UI Improvements</h3>
+          <p>
+            I enhance details that make a website easier to use, including
+            buttons, cards, forms, menus, hover effects, and page transitions.
+            I aim for a consistent interface that feels polished without
+            sacrificing clarity or usability.
+          </p>
+          <ul class="service-features">
+            <li>Reusable cards and interface elements</li>
+            <li>Buttons, forms, and navigation styling</li>
+            <li>Subtle transitions and hover effects</li>
+            <li>Clear visual hierarchy and spacing</li>
+          </ul>
+          <div class="service-tags">
+            <span>CSS</span><span>JavaScript</span><span>UI Components</span>
+          </div>
+          <a href="#contact" class="text-link">Improve your website UI ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects-section" id="projects">
+      <div class="section-heading projects-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects that bring ideas <span class="gradient-text">to life.</span></h2>
+        </div>
+        <p class="section-description">
+          A selection of sample projects. Replace the images, descriptions,
+          and links with your own project details.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        
+<!-- Smart Budget Tracker Project -->
+<article class="project-card">
+
+  <div class="project-video">
+    <video
+      controls
+      preload="metadata"
+      poster="WhatsApp Video 2026-10-26 at 7.41.10 PM.mp4"
+      aria-label="Smart Budget Tracker project demonstration">
+
+      <source src="videos/smart-budget-tracker.mp4" type="video/mp4">
+
+      Your browser does not support HTML video.
+      Please update your browser to watch this demonstration.
+    </video>
+  </div>
+
+  <div class="project-content">
+    <div class="project-meta">
+      <span>WEB APPLICATION</span>
+      <span>01 / 04</span>
+    </div>
+
+    <h3>Smart Budget Tracker</h3>
+
+    <p>
+      Smart Budget Tracker is a personal finance web application
+      designed to help users manage their money efficiently. Users
+      can record income and expenses, monitor spending, organize
+      transactions into categories, and review their financial
+
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+        
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-image" href="https://example.com"
+             target="_blank" rel="noopener noreferrer">
+            <img src="Screenshot 2026-07-24 113141.png"
+              alt="Camera ready for photography" loading="lazy">
+            <span class="image-arrow">↗</span>
+          </a>
+          <div class="project-content">
+            <div class="project-meta"><span>FRONTEND</span><span>02 / 04</span></div>
+            <h3>Interactive Image Gallery</h3>
+            <p>
+              A responsive photo gallery with category filters, next and
+              previous controls, and a lightbox for viewing images in
+              greater detail.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-image" href="https://example.com"
+             target="_blank" rel="noopener noreferrer">
+            <img src="Screenshot 2026-07-24 113739.png"
+              alt="Colleagues collaborating around a table" loading="lazy">
+            <span class="image-arrow">↗</span>
+          </a>
+          <div class="project-content">
+            <div class="project-meta"><span>WEB APP</span><span>03 / 04</span></div>
+            <h3>Employee Directory</h3>
+            <p>
+              A searchable team directory with employee cards and profile
+              details, designed to help users find colleagues by name or role.
+            </p>
+            <div class="project-tags">
+              <span>React</span><span>CSS</span><span>JavaScript</span>
+            </div>
+  
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-image" href="https://example.com"
+             target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
+              alt="Fresh vegetables and healthy food in bowls" loading="lazy">
+            <span class="image-arrow">↗</span>
+          </a>
+          <div class="project-content">
+            <div class="project-meta"><span>PLATFORM CONCEPT</span><span>04 / 04</span></div>
+            <h3>FoodShare Donation Platform</h3>
+            <p>
+              A concept platform connecting food donors with NGOs, featuring
+              donation listings, request management, and donor and NGO dashboards.
+            </p>
+            <div class="project-tags">
+              <span>React</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          
+          </div>
+        </article>
+      </div>
+
+     
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <p class="eyebrow">LET'S WORK TOGETHER</p>
+          <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
+          <p>
+            Tell me a little about your project. The form opens your email
+            app with your message prepared.
+          </p>
+
+          <div class="contact-detail">
+            <span>✉</span>
+            <div>
+              <small>EMAIL</small>
+              <a href="mailto:hello@utamdevi.dev">rathiamn85@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/Utamdevi/casework-portfolio" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/utamdevi-0457952ba/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text"
+            placeholder="Enter your name" autocomplete="name" required>
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"
+            placeholder="you@example.com" autocomplete="email" required>
+
+          <label for="message">Tell me about your project</label>
+          <textarea id="message" name="message" rows="5"
+            placeholder="What would you like to build?" required></textarea>
+
+          <button class="button submit-button" type="submit">
+            Prepare email ↗
+          </button>
+          <p class="form-note" id="formNote" aria-live="polite">
+            This opens your default email application.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a class="logo" href="#home">UD<span>.</span></a>
+    <p>Designed and built by Utamdevi.</p>
+    <a href="#home">Back to top ↑</a>
+    <small>© <span id="year"></span> Utamdevi. All rights reserved.</small>
+  </footer>
+
+</body>
+</html>
